@@ -1,0 +1,14 @@
+{% extends 'base.html.twig'%}
+
+{% block content %}
+    <ul>
+        {% for personnage in personnages %}
+        <li>
+            {{ personnage.nom }},
+            {{ personnage.prenom }},
+            {{ personnage.biographie }}
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
